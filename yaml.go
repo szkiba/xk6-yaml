@@ -28,7 +28,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/loadimpact/k6/js/modules"
+	"go.k6.io/k6/js/modules"
 	"gopkg.in/yaml.v3"
 )
 
