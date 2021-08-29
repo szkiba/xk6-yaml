@@ -4,7 +4,7 @@ A k6 extension enables k6 tests to comfortably encode and decode YAML values.
 
 The underlying implementation is https://github.com/go-yaml/yaml
 
-Built for [k6](https://go.k6.io/k6) using [xk6](https://github.com/k6io/xk6).
+Built for [k6](https://go.k6.io/k6) using [xk6](https://github.com/grafana/xk6).
 
 ## Usage
 
@@ -38,7 +38,7 @@ Then:
 
 1. Install `xk6`:
   ```bash
-  $ go install github.com/k6io/xk6@latest
+  $ go install go.k6.io/xk6/cmd/xk6@latest
   ```
 
 2. Build the binary:
