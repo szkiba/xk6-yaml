@@ -24,7 +24,6 @@ package yaml
 
 import (
 	"bytes"
-	"context"
 	"errors"
 	"strings"
 
@@ -48,7 +47,7 @@ const (
 	arrayError = "cannot unmarshal !!seq into map[string]interface {}"
 )
 
-func (m *Module) Parse(ctx context.Context, text string) (interface{}, error) {
+func (m *Module) Parse(text string) (interface{}, error) {
 	obj := map[string]interface{}{}
 
 	err := yaml.Unmarshal([]byte(text), &obj)
@@ -70,7 +69,7 @@ func (m *Module) Parse(ctx context.Context, text string) (interface{}, error) {
 	return nil, err
 }
 
-func (m *Module) Stringify(ctx context.Context, value interface{}) (string, error) {
+func (m *Module) Stringify(value interface{}) (string, error) {
 	var buff bytes.Buffer
 
 	enc := yaml.NewEncoder(&buff)
