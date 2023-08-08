@@ -3,7 +3,7 @@ module github.com/szkiba/xk6-yaml
 go 1.17
 
 require (
-	go.k6.io/k6 v0.39.0
+	go.k6.io/k6 v0.45.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 
